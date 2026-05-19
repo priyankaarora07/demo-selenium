@@ -1,4 +1,4 @@
-package Selenium_Test;
+package Sel_test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +12,7 @@ public class Demo {
 	public static void main(String[] args) {
 	
 		// Set the path to the ChromeDriver executable
-        System.setProperty("webdriver.chrome.driver", "D:\\Backup_2026\\Documents\\Work\\chromedriver_2\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\Backup_2026\\Documents\\Work\\chromedriver\\chromedriver.exe");
         
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com");

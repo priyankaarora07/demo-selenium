@@ -12,15 +12,15 @@
         <artifactId>selenium-java</artifactId>
         <version>3.141.59</version>
     </dependency>
-    
-    <!-- ChromeDriver -->
-    <dependency>
-        <groupId>io.github.bonigarcia</groupId>
-        <artifactId>webdrivermanager</artifactId>
-        <version>5.8.0</version> <!-- Use the latest version -->
-    </dependency>
+        
+	<dependency>
+	    <groupId>org.testng</groupId>
+	    <artifactId>testng</artifactId>
+	    <version>7.10.2</version>
+	    <scope>test</scope>
+	</dependency>	
   </dependencies>
-  
+ 
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -32,14 +32,6 @@
           <target>1.8</target>
         </configuration>
       </plugin>     
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>exec-maven-plugin</artifactId>
-        <version>3.8.0</version>
-        <configuration>
-            <mainClass>com.Selenium_Test.MainClass</mainClass>
-        </configuration>
-      </plugin>      
     </plugins>
   </build>
 </project>
